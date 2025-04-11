@@ -1,0 +1,109 @@
+/* .name - назва стилю */
+/* #name - назва id айді */
+/* [name] або [type = 'button']- назва аттрибуту тега, наприклад type у button
+приклад для аттрибуту disabled кнопки
+.button-class-name {background-color: aquamarine;}
+.button-class-name[disabled] {background-color: coral;} */
+
+/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>> */
+/* глобальні змінні*/
+/*  :root не равно html из-за разной специфичности и веса 819b57*/
+:root{
+--primary-color-brand-light-green: #819b57;
+--primary-color-light-beige: #faf4ea;
+--primary-color-brown: #31261a;
+
+--secondary-color-brand-dark-green: #465929;
+}
+
+
+
+
+/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>> */
+/* global or base style*/
+/* body * {
+    border: 1px solid black;
+} */
+body * {
+    color: var(--primary-color-brown);
+}
+
+ul{
+    list-style-type: none;}
+
+ul>li>a{    
+    background-color: #31261a;}
+
+section {
+    border: 1px solid black;}
+
+.body-style{
+    background-color: var(--primary-color-light-beige);
+    width: 1280px;
+    margin-left: 350px;
+    }
+
+.section-2-tradition {border: 1px solid black;}
+
+/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>> */
+/* button style*/
+.button-request-call {
+    position: relative;
+    display: flex;
+    width: 208px;
+    height: 54px;
+    color: var(--primary-color-light-beige);    
+    border-radius: 8px;
+    border: 2px solid var(--primary-color-brand-light-green);
+    background-color: var(--primary-color-brand-light-green);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    cursor: pointer;
+}
+.button-request-call:hover {
+    background-color: transparent;    
+    color:var(--secondary-color-brand-dark-green);
+}
+
+
+/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>> */
+/* linl style*/
+.main-links{
+    color: var(--primary-color-light-beige);
+}
+
+.main-links:hover{
+    color: var(--primary-color-brand-light-green);
+}
+
+/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>> */
+/* TOP or hero section style*/
+.hero-title-header-h1{
+    color:var(--primary-color-light-beige);
+}
+
+.hero-title-header-h1 .accent{
+    color:var(--primary-color-brand-light-green);
+}
+
+.accent{
+    color:var(--primary-color-brand-light-green);
+}
+
+.advantages-list{
+    background-color: var(--primary-color-brand-light-green);
+    color: var(--primary-color-light-beige);
+}
+
+
+
+/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>> */
+/* h2 style*/
+/* accent визначений окремо */
+.section-title-header-h2{
+color:var(--primary-color-brown);
+}
+
